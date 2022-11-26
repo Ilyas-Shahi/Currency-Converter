@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+/*  --- BASE ---  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  font-weight: 400;
+  background-color: #903be4;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #903be4;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(2rem, 5vw, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1rem, 5vw, 1.2rem);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+a:hover {
+  color: #903be4;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+main .main-card .inputs form select {
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, main .main-card .inputs form select {
+  outline: none;
+}
+
+/*  --- BUTTONS ---  */
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #903be4;
+  padding: clamp(0.75rem, 5vw, 1rem) clamp(1.25rem, 5vw, 2rem);
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  font-weight: 500;
+  border: 2px solid #903be4;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #903be4;
+  color: #fff;
+}
+.btn-outline {
+  background-color: transparent;
+  color: #903be4;
+  border: 2px solid #903be4;
+}
+.btn-outline:hover, .btn-outline:focus {
+  background-color: #903be4;
+  color: #fff;
+}
+.btn i {
+  margin-right: 0.5rem;
+}
+
+/*   --- Reuseable CSS Classes ---   */
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 0 2rem;
+}
+main div:nth-of-type(1) {
+  width: 100%;
+}
+main .main-heading {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  text-transform: capitalize;
+}
+main .main-card {
+  width: 100%;
+  max-width: 888px;
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+}
+main .main-card .inputs {
+  margin-bottom: 2.5rem;
+}
+main .main-card .inputs form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+main .main-card .inputs form input, main .main-card .inputs form select {
+  border: 1px solid #903be4;
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+main .main-card .inputs form div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+main .main-card .inputs form div label {
+  margin-bottom: 1rem;
+}
+main .main-card .inputs form #swap {
+  color: #903be4;
+  font-size: 1.2rem;
+  background: transparent;
+  border: 1px solid #903be4;
+  padding: 1rem 1.1rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+@media (max-width: 600px) {
+  main .main-card .inputs form div:first-child {
+    flex: auto;
+    width: 100%;
+  }
+}
+main .main-card .results {
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+main .main-card .results #conversion {
+  margin: 0.6rem 0 1.5rem 0;
+}
+main .main-card .convert-btn {
+  display: flex;
+  justify-content: end;
+}

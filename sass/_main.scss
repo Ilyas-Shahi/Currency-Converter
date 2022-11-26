@@ -1,0 +1,91 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 0 2rem;
+
+  & div:nth-of-type(1) {
+    width: 100%;
+  }
+
+  .main-heading {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    text-transform: capitalize;
+  }
+
+  .main-card {
+    width: 100%;
+    max-width: 888px;
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+
+    .inputs {
+      margin-bottom: 2.5rem;
+
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        input {
+          border: 1px solid $primary-color;
+          font-size: $normal-font-size;
+          padding: 0.5rem 1rem;
+          width: 100%;
+          border-radius: 0.5rem;
+        }
+
+        select {
+          @extend input;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+
+          label {
+            margin-bottom: 1rem;
+          }
+        }
+
+        #swap {
+          color: $primary-color;
+          font-size: 1.2rem;
+          background: transparent;
+          border: 1px solid $primary-color;
+          padding: 1rem 1.1rem;
+          border-radius: 50%;
+          margin-top: 1rem;
+        }
+
+        @media (max-width: 600px) {
+          & div:first-child {
+            flex: auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .results {
+      margin-bottom: 2rem;
+      text-transform: capitalize;
+
+      #conversion {
+        margin: 0.6rem 0 1.5rem 0;
+      }
+    }
+
+    .convert-btn {
+      display: flex;
+      justify-content: end;
+    }
+  }
+}
