@@ -9,4 +9,6 @@ A currency converter to convert an amount in one currency to its corresponding v
 - User views the value of the source amount converted to the destination currency in a single output field as soon as either the input value, the source currency, or the destination currency is changed.
 - User can swap the values of the source and destination drop-down lists on the click of a button
 
-- Project inspired by Florin Pop's [App Ideas](https://ilyas-shahi.github.io/Currency-Converter/)
+---
+
+Project inspired by Florin Pop's [App Ideas](https://ilyas-shahi.github.io/Currency-Converter/)
