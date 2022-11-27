@@ -1,6 +1,7 @@
 # Currency Converter
 
-A currency converter to convert an amount in one currency to its corresponding value in another currency using their current exchange rate, for example it can be used to calculate the value of 100 US Dollars in Euros. Current exchange rates are usually provided by banks and other financial service providers, they also (in some cases) offer free and paid APIs for developers to get current and historical exchange rates between two or more currencies.
+A Currency Converter App to convert an amount from one currency to its corresponding value in another currency using their current exchange rate.
+Check it [Live](https://ilyas-shahi.github.io/Currency-Converter/)
 
 ## Features
 
